@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4873042188267696}
   - component: {fileID: 212752941576125108}
-  - component: {fileID: 114935300379690542}
+  - component: {fileID: 114237729998698186}
   m_Layer: 0
   m_Name: AsteroidSmall
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114935300379690542
+--- !u!114 &114237729998698186
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1406947538312160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0388552f39611c24ea8e40afc37f33fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 3615694ab5ca30e47ba5e83978510894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212752941576125108

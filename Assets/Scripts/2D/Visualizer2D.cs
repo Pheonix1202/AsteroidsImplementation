@@ -24,7 +24,7 @@ class Visualizer2D : MonoBehaviour, IVisualizer, IAsteroidsFactory
         get { return this; }
     }
 
-    public IAsteroid CreateAsteroid(AsteroidSize size)
+    public virtual IGameObject CreateAsteroid(AsteroidSize size)
     {
         GameObject next = null;
         switch (size)
@@ -40,39 +40,44 @@ class Visualizer2D : MonoBehaviour, IVisualizer, IAsteroidsFactory
                 break;
         }
         next.transform.SetParent(Parent);
-        return next.GetComponent<IAsteroid>();
+        return next.GetComponent<IGameObject>();
     }
 
-    public ILaser CreateLaser()
+    public IGameObject CreateLaser()
     {
         GameObject next = Instantiate(laser);
         next.transform.SetParent(Parent);
-        return next.GetComponent<ILaser>();
+        return next.GetComponent<IGameObject>();
     }
 
-    public IMissile CreateMissile()
+    public IGameObject CreateMissile()
     {
         GameObject next = Instantiate(missile);
         next.transform.SetParent(Parent);
-        return next.GetComponent<IMissile>();
+        return next.GetComponent<IGameObject>();
     }
 
-    public IPlayer CreatePlayer()
+    public IGameObject CreatePlayer()
     {
         GameObject next = Instantiate(player);
         next.transform.SetParent(Parent);
-        return next.GetComponent<IPlayer>();
+        return next.GetComponent<IGameObject>();
     }
 
-    public IUFO CreateUFO()
+    public virtual IGameObject CreateUFO()
     {
         GameObject next = Instantiate(ufo);
         next.transform.SetParent(Parent);
-        return next.GetComponent<IUFO>();
+        return next.GetComponent<IGameObject>();
     }
 
     public virtual void OnScoreChanged(object sender, ScoreEventArgs e)
     {
         gui.UpdateScore(e.Score);
+    }
+
+    public virtual void OnLaserCountChanged(object sender, LaserEventArgs e)
+    {
+        gui.OnLaserChargesCountChanged(e.Charges);
     }
 }

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4337243432478122}
   - component: {fileID: 33494865223029756}
   - component: {fileID: 23917059442945640}
-  - component: {fileID: 114964669377789550}
+  - component: {fileID: 114010806706392166}
   m_Layer: 0
   m_Name: AsteroidSmall3D
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1550522235296804}
   m_Mesh: {fileID: 4300002, guid: 2768a9a4c8d289840918dcb879705893, type: 3}
---- !u!114 &114964669377789550
+--- !u!114 &114010806706392166
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,6 +92,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1550522235296804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b98d3e73b5119b047ba2f403f463e5fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 3615694ab5ca30e47ba5e83978510894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

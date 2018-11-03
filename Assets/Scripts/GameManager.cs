@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
-        game = Game.Instance;
+        game = new Game();
         game.AddVisualizers(GetComponent<Visualizer2D>(), GetComponent<Visualizer3D>());
 
         camera2D = GameObject.Find("Camera2D").GetComponent<Camera>();

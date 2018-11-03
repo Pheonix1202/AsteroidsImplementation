@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
-using Asteroids;
+using System.Collections;
 
-public class Asteroid3D : Asteroid2D, IAsteroid
+public class RandomRotation : MonoBehaviour
 {
     private Vector3 randomRotation;
 
+    // Use this for initialization
     void Start()
     {
         randomRotation = new Vector3(Random.value, Random.value, Random.value);
     }
 
+    // Update is called once per frame
     void Update()
     {
         transform.localRotation *= Quaternion.Euler(randomRotation);
